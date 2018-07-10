@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<!–– Made by Mark Brown for The Construct @ RIT. All rights reserved. DO NOT COPY ––>
+<!–– Released under the MIT license: http://jsbin.mit-license.org ––>
+
+<meta charset="UTF-8">
+<style id="css">
+#bin1 {
+    width: 960px;
+    height: 255px;
+    padding: 5px;
+    border: 2px solid black;
+}
+#bin2 {
+  width: 960px;
+  height: 15px;
+  padding: 5px;
+  border: 2px solid black;
+}
+#bin3 {
+    width: 960px;
+    height: 80px;
+    padding: 5px;
+    border: 2px solid black;
+}
+#bin4 {
+    width: 960px;
+    height: 80px;
+    padding: 5px;
+    border: 2px solid black;
+}
+#divNA {
+    width: 100%;
+    height: 13px;
+    padding: 1px;
+    float: left;
+}
+#divNA2 {
+    height: 13px;
+    width: 13px;
+    padding: 1px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+#divEND {
+    clear: left
+}
+#divn1 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn2 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn3 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn4 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn5 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn6 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn7 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn8 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn9 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divn10 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#divg1 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg2 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg3 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg4 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg5 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg6 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg7 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg8 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg9 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg10 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg11 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg12 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg13 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg14 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg15 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg16 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg17 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg18 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg19 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divg20 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaff;
+    float: left;
+}
+#divp1 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp2 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp3 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp4 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp5 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp6 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp7 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp8 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp9 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp10 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp11 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp12 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp13 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp14 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp15 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp16 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp17 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp18 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp19 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#divp20 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #ffaaaa;
+    float: left;
+}
+#Orange_Line {
+  position:absolute;
+  height:3px;
+  background: #FFA500;
+  width:100px;
+  visibility:hidden;
+}
+#Purple_Line {
+  position:absolute;
+  height:3px;
+  background: #A500ff;
+  width:100px;
+  visibility:hidden;
+}
+#Red_Line {
+  position:absolute;
+  height:3px;
+  background: #ff0000;
+  width:100px;
+  visibility:hidden;
+}
+#Yellow_Line {
+  position:absolute;
+  height:3px;
+  background: #ffff00;
+  width:100px;
+  visibility:hidden;
+}
+#Blue_Line {
+  position:absolute;
+  height:3px;
+  background: #0000ff;
+  width:100px;
+  visibility:hidden;
+}
+#Green_Line {
+  position:absolute;
+  height:3px;
+  background: #00ff00;
+  width:100px;
+  visibility:hidden;
+}
+#divo1 {
+    width: 13px;
+    height: 13px;
+    border: 1px solid #aaaaaa;
+    float: left;
+}
+#Image {
+	display: block;
+    margin: auto
+}
+</style>
+
+<p>Main board:</p>
+<div id="bin1">
+
+    <div id="divNA2"></div>
+    <div id="divNA2">+</div>
+    <div id="divNA2"></div>
+    <div id="divp1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divNA2"></div>
+    <div id="divp6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2"></div>
+    <div id="divNA2">-</div>
+    <div id="divNA2"></div>
+    <div id="divg1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divNA2"></div>
+    <div id="divg6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">A</div>
+    <div id="divn1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">B</div>
+    <div id="divn2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">C</div>
+    <div id="divn3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">D</div>
+    <div id="divn4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">E</div>
+    <div id="divn5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">F</div>
+    <div id="divn6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">G</div>
+    <div id="divn7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">H</div>
+    <div id="divn8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">I</div>
+    <div id="divn9" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2">J</div>
+    <div id="divn10" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2"></div>
+    <div id="divNA2">+</div>
+    <div id="divNA2"></div>
+    <div id="divp11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divNA2"></div>
+    <div id="divp16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divp20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divEND"></div>
+
+    <div id="divNA2"></div>
+    <div id="divNA2">-</div>
+    <div id="divNA2"></div>
+    <div id="divg11" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg12" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg13" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg14" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg15" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divNA2"></div>
+    <div id="divg16" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg17" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg18" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg19" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA2"></div>
+    <div id="divg20" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div id="divNA"></div>
+    <div id="divEND"></div>
+
+</div>
+
+<p>Off the board:</p>
+<div id="bin2">
+    <div id="divo1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+<p>Select parts:</p>
+<div id="bin3">
+    <img id="10k_ohm" src="http://i.imgur.com/dm382Lu.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="220_ohm" src="http://i.imgur.com/bw4hgfT.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="330_ohm" src="http://i.imgur.com/ubJ15uq.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="1k_ohm" src="http://i.imgur.com/7ZKRjzV.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+
+    <img id="Orange_LED" src="http://i.imgur.com/kmF6J0V.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Purple_LED" src="http://i.imgur.com/OLbtp83.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Red_LED" src="http://i.imgur.com/RRrh91Y.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Yellow_LED" src="http://i.imgur.com/I22S3D5.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Blue_LED" src="http://i.imgur.com/7e8DHvw.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Green_LED" src="http://i.imgur.com/k4kDewb.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+
+    <img id="Button" src="http://i.imgur.com/EYqK5S0.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Diode" src="http://i.imgur.com/oP6AvsH.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Transistor" src="http://i.imgur.com/NRNCaHW.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+    <img id="Arduino" src="http://i.imgur.com/N2osQ4l.png" ondragstart="drag(event)" align="left" onclick="rotate90(this)">
+
+    <img id="Orange_Dot_1" src="http://i.imgur.com/UcxXynu.png" ondragstart="drag(event)" align="left">
+    <img id="Orange_Dot_2" src="http://i.imgur.com/UcxXynu.png" ondragstart="drag(event)" align="left">
+    <img id="Purple_Dot_1" src="http://i.imgur.com/NVSiflZ.png" ondragstart="drag(event)" align="left">
+    <img id="Purple_Dot_2" src="http://i.imgur.com/NVSiflZ.png" ondragstart="drag(event)" align="left">
+    <img id="Red_Dot_1" src="http://i.imgur.com/mWgJTcV.png" ondragstart="drag(event)" align="left">
+    <img id="Red_Dot_2" src="http://i.imgur.com/mWgJTcV.png" ondragstart="drag(event)" align="left">
+    <img id="Yellow_Dot_1" src="http://i.imgur.com/gLVKOuD.png" ondragstart="drag(event)" align="left">
+    <img id="Yellow_Dot_2" src="http://i.imgur.com/gLVKOuD.png" ondragstart="drag(event)" align="left">
+    <img id="Blue_Dot_1" src="http://i.imgur.com/Thip9s7.png" ondragstart="drag(event)" align="left">
+    <img id="Blue_Dot_2" src="http://i.imgur.com/Thip9s7.png" ondragstart="drag(event)" align="left">
+    <img id="Green_Dot_1" src="http://i.imgur.com/Yv52lic.png" ondragstart="drag(event)" align="left">
+    <img id="Green_Dot_2" src="http://i.imgur.com/Yv52lic.png" ondragstart="drag(event)" align="left">
+    <div id="Orange_Line"></div>
+    <div id="Purple_Line"></div>
+    <div id="Red_Line"></div>
+    <div id="Yellow_Line"></div>
+    <div id="Blue_Line"></div>
+    <div id="Green_Line"></div>
+</div>
+
+<p>Used parts:</p>
+<div id="bin3">
+</div>
+<input type="button" value="Print" onClick="window.print()">
+<script id="javascript">
+var o=document.querySelector("#Orange_Line");
+var orange1=document.getElementById("Orange_Dot_1");
+var orange2=document.getElementById("Orange_Dot_2");
+var p=document.querySelector("#Purple_Line");
+var purple1=document.getElementById("Purple_Dot_1");
+var purple2=document.getElementById("Purple_Dot_2");
+var r=document.querySelector("#Red_Line");
+var red1=document.getElementById("Red_Dot_1");
+var red2=document.getElementById("Red_Dot_2");
+var y=document.querySelector("#Yellow_Line");
+var yellow1=document.getElementById("Yellow_Dot_1");
+var yellow2=document.getElementById("Yellow_Dot_2");
+var b=document.querySelector("#Blue_Line");
+var blue1=document.getElementById("Blue_Dot_1");
+var blue2=document.getElementById("Blue_Dot_2");
+var g=document.querySelector("#Green_Line");
+var green1=document.getElementById("Green_Dot_1");
+var green2=document.getElementById("Green_Dot_2");
+var delta=0;
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data=ev.dataTransfer.getData("text");
+
+    ev.target.appendChild(document.getElementById(data));
+
+    if(data=="Orange_Dot_1" || data =="Orange_Dot_2") {
+        dot1=orange1;
+        dot2=orange2;
+        line=o;
+    }
+    else if(data=="Purple_Dot_1" || data =="Purple_Dot_2") {
+        dot1=purple1;
+        dot2=purple2;
+        line=p;
+    }
+    else if(data=="Red_Dot_1" || data =="Red_Dot_2") {
+        dot1=red1;
+        dot2=red2;
+        line=r;
+    }
+    else if(data=="Yellow_Dot_1" || data =="Yellow_Dot_2") {
+        dot1=yellow1;
+        dot2=yellow2;
+        line=y;
+    }
+    else if(data=="Blue_Dot_1" || data =="Blue_Dot_2") {
+        dot1=blue1
+        dot2=blue2;
+        line=b;
+    }
+    else if(data=="Green_Dot_1" || data =="Green_Dot_2") {
+        dot1=green1;
+        dot2=green2;
+        line=g;
+    }
+    line.style.left=dot1.offsetLeft+5+"px";
+    line.style.top=dot1.offsetTop+5+"px";
+    line.style.visibility="visible";
+    var Rangle=Math.atan2(dot2.offsetTop-dot1.offsetTop, dot2.offsetLeft-dot1.offsetLeft)*180/Math.PI;
+    var Rlength=Math.sqrt((dot2.offsetLeft-dot1.offsetLeft)*(dot2.offsetLeft-dot1.offsetLeft)+(dot2.offsetTop-dot1.offsetTop)*(dot2.offsetTop-dot1.offsetTop));
+    line.style.width=Math.abs(Rlength)+"px";
+    line.style.transform="rotate("+Math.round(Rangle)+"deg)";
+    line.style.transformOrigin ="0 0";
+}
+function rotate90(ele){
+  ele.style.webkitTransform="rotate("+delta+"deg)";
+  delta+=90;
+}
+function multiplyNode(node, count, deep) {
+    for (var i = 0, copy; i < count - 1; i++) {
+        copy = node.cloneNode(deep);
+        node.parentNode.insertBefore(copy, node);
+    }
+}
+multiplyNode(document.querySelector("#divp1"), 5, true);
+multiplyNode(document.querySelector("#divp2"), 5, true);
+multiplyNode(document.querySelector("#divp3"), 5, true);
+multiplyNode(document.querySelector("#divp4"), 5, true);
+multiplyNode(document.querySelector("#divp5"), 5, true);
+multiplyNode(document.querySelector("#divp6"), 5, true);
+multiplyNode(document.querySelector("#divp7"), 5, true);
+multiplyNode(document.querySelector("#divp8"), 5, true);
+multiplyNode(document.querySelector("#divp9"), 5, true);
+multiplyNode(document.querySelector("#divp10"), 5, true);
+
+multiplyNode(document.querySelector("#divg1"), 5, true);
+multiplyNode(document.querySelector("#divg2"), 5, true);
+multiplyNode(document.querySelector("#divg3"), 5, true);
+multiplyNode(document.querySelector("#divg4"), 5, true);
+multiplyNode(document.querySelector("#divg5"), 5, true);
+multiplyNode(document.querySelector("#divg6"), 5, true);
+multiplyNode(document.querySelector("#divg7"), 5, true);
+multiplyNode(document.querySelector("#divg8"), 5, true);
+multiplyNode(document.querySelector("#divg9"), 5, true);
+multiplyNode(document.querySelector("#divg10"), 5, true);
+
+multiplyNode(document.querySelector("#divn1"), 63, true);
+multiplyNode(document.querySelector("#divn2"), 63, true);
+multiplyNode(document.querySelector("#divn3"), 63, true);
+multiplyNode(document.querySelector("#divn4"), 63, true);
+multiplyNode(document.querySelector("#divn5"), 63, true);
+multiplyNode(document.querySelector("#divn6"), 63, true);
+multiplyNode(document.querySelector("#divn7"), 63, true);
+multiplyNode(document.querySelector("#divn8"), 63, true);
+multiplyNode(document.querySelector("#divn9"), 63, true);
+multiplyNode(document.querySelector("#divn10"), 63, true);
+
+multiplyNode(document.querySelector("#divp11"), 5, true);
+multiplyNode(document.querySelector("#divp12"), 5, true);
+multiplyNode(document.querySelector("#divp13"), 5, true);
+multiplyNode(document.querySelector("#divp14"), 5, true);
+multiplyNode(document.querySelector("#divp15"), 5, true);
+multiplyNode(document.querySelector("#divp16"), 5, true);
+multiplyNode(document.querySelector("#divp17"), 5, true);
+multiplyNode(document.querySelector("#divp18"), 5, true);
+multiplyNode(document.querySelector("#divp19"), 5, true);
+multiplyNode(document.querySelector("#divp20"), 5, true);
+
+multiplyNode(document.querySelector("#divg11"), 5, true);
+multiplyNode(document.querySelector("#divg12"), 5, true);
+multiplyNode(document.querySelector("#divg13"), 5, true);
+multiplyNode(document.querySelector("#divg14"), 5, true);
+multiplyNode(document.querySelector("#divg15"), 5, true);
+multiplyNode(document.querySelector("#divg16"), 5, true);
+multiplyNode(document.querySelector("#divg17"), 5, true);
+multiplyNode(document.querySelector("#divg18"), 5, true);
+multiplyNode(document.querySelector("#divg19"), 5, true);
+multiplyNode(document.querySelector("#divg20"), 5, true);
+multiplyNode(document.querySelector("#divo1"), 64, true);
+
+</script>
